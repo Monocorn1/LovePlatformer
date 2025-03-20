@@ -13,3 +13,7 @@ windowWidth, windowHeight = windowWidth*.7, windowHeight*.7
 
 virtualWidth, virtualHeight = 320, 180
 
+love.graphics.setDefaultFilter('nearest')
+push:setupScreen(virtualWidth, virtualHeight, windowWidth,
+ windowHeight, {fullscreen = false, vsync = true})
+

@@ -2,9 +2,6 @@ config = require('config')
 
 function love.load()
     --setup screen
-    love.graphics.setDefaultFilter('nearest')
-    push:setupScreen(virtualWidth, virtualHeight, windowWidth,
-     windowHeight, {fullscreen = false, vsync = true})
     
     --Gravity
     world = wf.newWorld(0, 1000)
